@@ -1,0 +1,387 @@
+<html>
+    <head>
+        <title>SAMATERBOL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
+        <script>
+              function openStore(evt, storeName){
+              var i, tabcontent, tablinks;
+              tabcontent=document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++){
+                  tabcontent[i].style.display="none";
+              }
+              tablinks= document.getElementsByClassName("tablinks");
+              for (i = 0; i< tablinks.length; i++){
+                  tablinks[i].className= tablinks[i].className.replace(" active","");
+              }
+              document.getElementById(storeName).style.display="block";
+              evt.currentTarget.className+="active";
+          } 
+         </script>
+         <style>
+            body{
+                  background-color:white;
+                  border: solid #075BAB;
+                  
+    
+                }
+            img {
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: 50%;
+                }
+            #title{
+                  text-align: center;
+                  color: #000080;
+                  border-color:black;
+                  }
+            .tab {
+                  overflow: hidden;
+                  font-size:30px;
+                  padding: 14px 16px;
+                  position: inherit;
+                  border-bottom: dashed #075BAB;
+                 }
+            .tab button{
+			    font-weight: bold;
+                background-color:#ccccff;
+                border: #075BAB;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 20px;
+                transition: o.3s;
+                border: 1px solid
+                      white;
+                }
+                
+                   
+                
+            .tab button:hover{
+                 background-color: grey;
+                }
+           .tab button.active{
+                 background-color: #075BAB;
+   
+               }
+            .tabcontent{
+                display: none;
+                padding: 14px 16px;
+                border-top:none;
+                 }
+                 h1{
+                     
+                 font-family: brush script mt;
+                 }
+                 .tablinks{
+                     border:3px solid red;
+                 }
+				 h2{
+				 text-align:center;
+				 }
+				 
+				 table{
+				  align: center;
+				 }
+{
+border-collapse: collapse; 
+position: static; 
+right : 40% ;
+}
+ 
+
+td{
+
+text-align: center;
+font-weight: bold;
+padding: 10px;
+border: 0px solid black; 
+}
+				 
+</style>
+    </head>
+    <body>
+        <img src="logo.jpeg" alt="logo">
+        <div ID="title">
+            <h4>WELCOME TO OUR RESTO-CAFFE</h4>
+			
+        </div>
+       
+        <div id="btn" class="tab">
+            <button class="tablinks" onclick="openStore(event,'PLATERS')" style="width:150px;"> Platers</button>
+            <button class="tablinks" onclick="openStore(event,'SALADS')" style="width:150px;"> Salads</button>
+            <button class="tablinks" onclick="openStore(event,'SWEETBREAKFAST')" style="width:150px;"> Crepe</button>
+            <button class="tablinks" onclick="openStore(event,'BREAKFAST')" style="width:150px;"> Breakfast</button> 
+            <button class="tablinks" onclick="openStore(event,'SAJJ')" style="width:150px;"> Sajj</button>
+            <button class="tablinks" onclick="openStore(event,'SHICHA')" style="width:150px;"> Shisha</button>
+            <button class="tablinks" onclick="openStore(event,'SHAKES')" style="width:150px;"> Shakes</button>
+            <button class="tablinks" onclick="openStore(event,'BLEND')" style="width:150px;"> Blend</button>
+            <button class="tablinks" onclick="openStore(event,'MIXALOGIE')" style="width:150px;">Mixalogie</button>
+            <button class="tablinks" onclick="openStore(event,'COLDDRINKS')" style="width:150px;">Cold Drinks</button>
+            <button class="tablinks" onclick="openStore(event,'HOTDRINKS')" style="width:150px;">Hot drinks</button>
+            <button class="tablinks" onclick="openStore(event,'DESSER')" style="width:150px;">Dessert</button>
+            <button class="tablinks" onclick="openStore(event,'MCHWE')" style="width:150px;">مشاوي</button>
+            <button class="tablinks" onclick="openStore(event,'SLTA')" style="width:150px;"> سلطات شرقية</button>
+            <button class="tablinks" onclick="openStore(event,'MU2BLT')" style="width:150px;"> مقبلات شرقية</button>
+            <button class="tablinks" onclick="openStore(event,'HOTMU2BLT')" style="width:150px;"> مقبلات ساخنة</button>
+        </div>
+		
+        <div  id="PLATERS" class="tabcontent">
+			<table align="center">
+			<tbody>
+			<tr><td> FAJITAS</td><td>45000</td><td>وجبة فاهيتا</td></tr>
+            <tr><td>CRISPY</td><td>45000</td><td>وجبة كرسبي</td></tr>
+			<tr><td>CHICKEN BURGER</td><td>40000</td><td>برغر دجاج</td></tr>
+            <tr><td>HAMBURGER</td><td>40000</td><td>برغر لحمة</td></tr>
+            <tr><td>BAKED POTATO</td><td>25000</td><td>بطاطا مشوية</td></tr>
+            <tr><td>CHEESE BURGER</td><td>45000</td><td>برغر لحمة مع جبنة</td></tr>
+            <tr><td>DOUBLE CHEESE BURGER</td><td>55000</td><td>دبل برغر لحمة مع جبنة</td></tr>
+            <tr><td>CHICKEN CHEESE BURGER</td><td>45000</td><td> برغر دجاجة مع جبنة</td></tr>
+            <tr><td>DOUBLE CHICKEN CHEESE BURGER</td><td>55000</td><td> دبل برغر دجاجة مع جبنة</td></tr>
+            <tr><td>TUNA SANDWICH</td><td>35000</td><td>تونا ساندويش</td></tr>
+			</tbody>
+            </table>
+        </div>
+        <div  id="SALADS" class="tabcontent">        
+           <p> 
+		   <table align="center">
+			<tbody>
+			<tr><td>CEASER</td><td>15000</td><td>سيزر</td></tr>
+            <tr><td>CHICKEN CEASER</td><td>25000</td><td>سيزر دجاج</td></tr>
+			<tr><td>TUNA</td><td>25000</td><td>تونا</td></tr>
+			</tbody>
+            </table>
+            </p>
+        </div>
+        <div  id="SWEETBREAKFAST" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>CREPE</td><td>20000</td><td>كريب</td></tr>
+            <tr><td>CREPE KIT KAT</td><td>27000</td><td>كريب كيت كات</td></tr>
+			<tr><td>CREPE SNIKERS</td><td>27000</td><td>كريب سنيكرز</td></tr>
+            <tr><td>CREPE OREO</td><td>27000</td><td>كريب اوريو</td></tr>
+            <tr><td>CREPE MARS</td><td>27000</td><td>كريب مارس</td></tr>
+            <tr><td>CREPE KINDER</td><td>30000</td><td>كريب كيندر</td></tr>
+            <tr><td>CREPE LOTUS</td><td>27000</td><td>كريب لوتس</td></tr>
+            <tr><td>CREPE FRUUIT</td><td>27000</td><td>كريب فواكه</td></tr>
+			</tbody>
+            </table>
+			</p>
+          </div>
+        <div  id="BREAKFAST" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>OMLET</td><td>15000</td><td>عجة بيض</td></tr>
+            <tr><td>OMLET WITH AVOCADO</td><td>17000</td><td>عجة بيض بالافوكادو</td></tr>
+			<tr><td>ARISH DISH</td><td>10000</td><td>صحن اريش</td></tr>
+            <tr><td>LABNEH DISH</td><td>10000</td><td>صحن لبنة</td></tr>
+            <tr><td>JAM DISH</td><td>10000</td><td>صحن مربى</td></tr>
+            <tr><td>LEBANESE BREAKFAST</td><td>40000</td><td>جبنة/لبنة/زيتون/مربى/شاي</td></tr>
+            <tr><td>LEBANESE BREAKFAST COMBO</td><td>45000</td><td>منقوشة جبنة/لبنة/بيض مقلي/شاي</td></tr>
+            <tr><td>MALISYE</td><td>16000</td><td>ماليزية</td></tr>
+            <tr><td>PEAN IN LEMON</td><td>15000</td><td>فول بحامض</td></tr>
+            <tr><td>HOMOS IN TAHENE</td><td>16000</td><td>حمص بطحينة</td></tr>
+            <tr><td>FATTEH</td><td>16000</td><td>فتة</td></tr>
+			</tbody>
+            </table>
+			</p>
+          </div>
+        <div  id="SAJJ" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>THYME</td><td>8000</td><td>زعتر</td></tr>
+            <tr><td>ARISH</td><td>12000</td><td>اريش</td></tr>
+			<tr><td>THYME WITH VEGETABELS</td><td>10000</td><td>زعتر مع خضرة</td></tr>
+            <tr><td>CHESSE</td><td>12000</td><td>جبنة</td></tr>
+            <tr><td>CHESSE WITH VEGETABELS & MARTADELA</td><td>20000</td><td>جبنة مع مرتديلا وخضرة</td></tr>
+            <tr><td>LABNEH WITH VEGETABELS</td><td>18000</td><td>لبنة مع خضرة</td></tr>
+            <tr><td>CHESSE WITH CORN</td><td>15000</td><td>جبنة مع ذرة</td></tr>
+            <tr><td>ARISH WITH CHESSE</td><td>20000</td><td>اريش وجبنة</td></tr>
+            <tr><td>LABNEH WITH VEGETABELS & MARTADELA</td><td>24000</td><td>لبنة مع مرتديلا وخضرة</td></tr>
+            <tr><td>ARISH WITH VEGETABELS</td><td>18000</td><td>ارش مع خضرة</td></tr>
+            <tr><td>PIZZA</td><td>30000</td><td>بيتزا</td></tr>
+            <tr><td>CHICKEN PIZZA</td><td>40000</td><td>تشكن بيتزا</td></tr>
+            <tr><td>PIZZA FAJITAS</td><td>45000</td><td>بيتزا فاهيتا</td></tr>
+			</tbody>
+            </table>
+			</p>
+         </div>
+        <div  id="SHICHA" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>MUASAL(ALL FLAVOURS)</td><td>22000</td><td>معسل جميع النكهات</td></tr>
+            <tr><td>RAS JABALI(ALL FLAVOURS)</td><td>29000</td><td>راس جبلي جميع النكهات</td></tr>
+			<tr><td>ASFAHANY</td><td>30000</td><td>اصفهاني</td></tr>
+            <tr><td>TURKISH</td><td>30000</td><td>تركي</td></tr>
+			</tbody>
+            </table>
+			</p>
+         </div>
+        <div  id="SHAKES" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>PISTACHIO SHAKE</td><td>28000</td><td>شيك فستق</td></tr>
+            <tr><td>STRAWBERRY SHAKE</td><td>28000</td><td>شيك فراولة</td></tr>
+			<tr><td>CHOCOLATE SHAKE</td><td>28000</td><td>شيك شوكولا</td></tr>
+            <tr><td>CARAMEL SHAKE</td><td>28000</td><td>شيك كراميل</td></tr>
+            <tr><td>OREO SHAKE</td><td>28000</td><td>شيك اوريو</td></tr>
+            <tr><td>SNICKERS SHAKE</td><td>28000</td><td>شيك سنيكرز</td></tr>
+            <tr><td>LOTUS SHAKE</td><td>28000</td><td>شيك لوتس</td></tr>
+			</tbody>
+            </table>
+			</p>
+         </div>
+        <div  id="BLEND" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>FRAPPUCCINO CHOCOLATE</td><td>25000</td><td>فرابوتشينو شوكولا</td></tr>
+            <tr><td>FRAPPUCCINO CARAMEL</td><td>25000</td><td>فرابوتشينو كراميل</td></tr>
+			<tr><td>FRAPPUCCINO VANILLA</td><td>25000</td><td>فرابوتشينو فانيل</td></tr>
+            <tr><td>FRAPPUCCINO JAVA CHIP</td><td>25000</td><td>فرابوتشينو جافا شيب</td></tr>
+            <tr><td>FRAPPUCCINO TIRAMISU</td><td>25000</td><td>فرابوتشينو تيراميسو</td></tr>
+            <tr><td>ICE NESCAFE</td><td>17000</td><td>نسكافيه متلج</td></tr>
+			</tbody>
+            </table>
+			</p>
+         </div>
+        <div  id="MIXALOGIE" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>PINACOLADA ORANGE</td><td>25000</td><td>بيناكولادا ليمون</td></tr>
+            <tr><td>PINACOLADA VANILLA</td><td>25000</td><td>بيناكولادا فانيل</td></tr>
+			<tr><td>JAMAICA</td><td>25000</td><td>جامايكا</td></tr>
+            <tr><td>SMOOTHIE PEACH</td><td>25000</td><td>سموزي دراق</td></tr>
+            <tr><td>SMOOTHIE MANGO</td><td>25000</td><td>سموزي مانغو</td></tr>
+            <tr><td>SMOOTHIE STRAWBERRY</td><td>25000</td><td>سموزي فراولة</td></tr>
+            <tr><td>PASSION FRUIT MIX</td><td>25000</td><td>باشن فروت</td></tr>
+			
+			</tbody>
+            </table>
+			</p>
+         </div>
+        <div  id="COLDDRINKS" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>LEMONADE</td><td>12000</td><td>ليموناضا</td></tr>
+            <tr><td>LEMONAD WITH MINT</td><td>15000</td><td>ليموناضا بالنعناع</td></tr>
+			<tr><td>ORANGE</td><td>15000</td><td>ليمون</td></tr>
+            <tr><td>CARROTS</td><td>15000</td><td>جزر</td></tr>
+            <tr><td>ENERGY DRINK</td><td>17000</td><td>مشروب طاقة</td></tr>
+            <tr><td>BLUE HAWAY</td><td>20000</td><td>بلو هاواي</td></tr>
+            <tr><td>SODA</td><td>7000</td><td>مشروبات غازية</td></tr>
+			</tbody>
+            </table>
+			</p>
+        </div>
+        <div  id="HOTDRINKS" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>TURKISH COFFE</td><td>7000</td><td>قهوة تركية</td></tr>
+            <tr><td>ESPRESSO</td><td>8000</td><td>اسبرسو</td></tr>
+			<tr><td>ESPRESSO AVOGADO</td><td>10000</td><td>اسبرسو افوكادو</td></tr>
+            <tr><td>MOCHACCINO</td><td>14000</td><td>موكاتشينو</td></tr>
+            <tr><td>MACCHIATO</td><td>14000</td><td>ميكاتو</td></tr>
+            <tr><td>MACCHIATO CARAMEL</td><td>16000</td><td>ميكاتو كاراميل</td></tr>
+            <tr><td>LATTE</td><td>14000</td><td>لاتيه</td></tr>
+            <tr><td>NESCAFE</td><td>14000</td><td>نسكافيه</td></tr>
+            <tr><td>CAPPUCCINO</td><td>14000</td><td>كابوتشينو</td></tr>
+            <tr><td>HOT CHOCOLATE</td><td>14000</td><td>شوكولا ساخنة</td></tr>
+            <tr><td>TEA</td><td>7000</td><td>شاي</td></tr>
+            <tr><td>HERBS TEA</td><td>7000</td><td>زهورات</td></tr>
+            <tr><td>GREEN TEA</td><td>7000</td><td> شاي اخضر</td></tr>
+            <tr><td>TEA LATTE</td><td>12000</td><td>شاي لاتيه</td></tr>
+            <tr><td>COOKIES</td><td>15000</td><td>كوكيز</td></tr>
+            <tr><td>NESCAFE COFFE MATTE</td><td>16000</td><td>نسكافيه كوفي ميت</td></tr>
+			</tbody>
+            </table>
+			</p>
+          </div>
+        <div  id="DESSER" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>FONDANT</td><td>25000</td><td>فوندان</td></tr>
+            <tr><td>FUDGE CAKE</td><td>20000</td><td>فاجي كيك</td></tr>
+			<tr><td>CHEESE CAKE OREO</td><td>20000</td><td>تشيز كيك اوريو</td></tr>
+            <tr><td>CHEESE CAKE STRAWBERRY</td><td>20000</td><td>تشيز كيك فراولة</td></tr>
+            <tr><td>TIRAMISU</td><td>20000</td><td>تيرامسيو</td></tr>
+            <tr><td>RED VELVET</td><td>20000</td><td>ريد فلفت</td></tr>
+            <tr><td>ICE CREAM</td><td>18000</td><td>ايسس كريم</td></tr>
+            <tr><td>FRUIT COCKTAIL JUICE</td><td>20000</td><td>كوكتيل عصير</td></tr>
+            <tr><td>FRUIT COCKTAIL</td><td>24000</td><td>كوكتيل شقف</td></tr>
+            <tr><td>CHOCOLATE MOU</td><td>18000</td><td>شوكولا مو</td></tr>
+            <tr><td>STRAWBERRY MOU</td><td>18000</td><td>فريز مو</td></tr>
+			</tbody>
+            </table>
+			</p>
+         </div>
+        <div  id="MCHWE" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>180000</td><td>كيلو مشاوي مشكل</td></tr>
+            <tr><td>190000</td><td>كيلو شقفق مشوي</td></tr>
+			<tr><td>170000</td><td>كيلو كفتة مشوي</td></tr>
+            <tr><td>120000</td><td>كيلو طاووق مشوي</td></tr>
+            <tr><td>50000</td><td>وجبة مشاوي مشكل</td></tr>
+            <tr><td>56000</td><td>وجبة شقف</td></tr>
+            <tr><td>52000</td><td>وجبة كفتة</td></tr>
+            <tr><td>45000</td><td>وجبة طاووق</td></tr>
+            <tr><td>85000</td><td>فروج مسحب</td></tr>
+			</tbody>
+            </table>
+			</p>
+          </div>
+        <div  id="SLTA" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>17000</td><td>فتوش</td></tr>
+            <tr><td>17000</td><td>تبولة</td></tr>
+			<tr><td>17000</td><td>سلطة موسمية</td></tr>
+			</tbody>
+            </table>
+			</p>
+         </div>
+        
+        <div  id= "MU2BLT" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>30000</td><td>كبة نية</td></tr>
+            <tr><td>20000</td><td>كبة مقلية</td></tr>
+			<tr><td>22000</td><td>كفتة دبس رمان</td></tr>
+            <tr><td>15000</td><td>رقائق جبنة سمبوسك</td></tr>
+            <tr><td>12000</td><td>حمص بطحينة</td></tr>
+            <tr><td>20000</td><td>حمص مع لحمة</td></tr>
+            <tr><td>12000</td><td>متبل بابا غنوج</td></tr>
+            <tr><td>15000</td><td>ورق عنب بزيت</td></tr>
+            <tr><td>15000</td><td>بطاطا حرة</td></tr>
+            <tr><td>6000</td><td>قرص كبة مشوية</td></tr>
+			</tbody>
+            </table>
+			</p>
+          </div>
+        <div  id="HOTMU2BLT" class="tabcontent">
+            <p>
+			<table align="center">
+			<tbody>
+			<tr><td>25000</td><td>مصارين</td></tr>
+            <tr><td>28000</td><td>فوارغ مقلي</td></tr>
+			<tr><td>30000</td><td>منسف دجاج</td></tr>
+			</tbody>
+            </table>
+			</p>
+         </div>
+    </body>
+</html>
