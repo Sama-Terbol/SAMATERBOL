@@ -131,6 +131,26 @@ header .text p {
   max-width: 100%;
   text-align: center;
 }
+.offer{
+  display: flex;
+  border: 5px solid #2c4755;
+  background-color: var(--color1);
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.offer img{
+  width: 100%;
+}
+.offer p{
+  font-size: 25px;
+  margin: 3px;
+  text-align: center;
+}
+.offer i{
+  color: #1ebe5b;
+  font-size: 2rem;
+}
 .menu {
   background: #b6c4c7;
   width: 100%;
