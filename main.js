@@ -12,7 +12,7 @@ this.scrollY >= 1000 ? div.classList.add("show") : div.classList.remove("show");
 
 div.onclick = function () {
 window.scrollTo({
-    top: 0,
+    top: 650,
     behavior: "smooth",
 });
 };
