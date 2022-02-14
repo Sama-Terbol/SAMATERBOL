@@ -132,7 +132,7 @@ header .text p {
   text-align: center;
 }
 .offer{
-  display: flex;
+  display: none;
   border: 5px solid #2c4755;
   background-color: var(--color1);
   flex-direction: column;
